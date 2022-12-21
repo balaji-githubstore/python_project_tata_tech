@@ -1,3 +1,4 @@
+""" Create Employee user defined datatype """
 class Employee:
     company_name = None  # static variable or class variable
     company_location = None
