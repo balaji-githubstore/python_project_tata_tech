@@ -1,16 +1,17 @@
 class Employee1:
     company_name = None  # static variable or class variable
-    company_location = None
+    __company_location = None
+    __emp_id = None  #accessible within the class
 
     # non static variable or instance variable
-    def __init__(o):
-        o.emp_id = None
+    def __init__(o,id):
+        o.__emp_id = None
         o.emp_name = None
         o.emp_salary = None
 
     # non-static methods
     def print_employee_details(self):
-        print("Employee Id " + str(self.emp_id))
+        print("Employee Id " + str(self.__emp_id))
         print("Employee Name " + self.emp_name)
         print("Employee Salary " + str(self.emp_salary))
         print("Company Name: " + Employee1.company_name)
