@@ -19,12 +19,12 @@ class Son(Father):
         print("son style - method")
 
 
-class GSon(Son):
-    gs_age = 10
-
-    def __init__(self):
-        super().__init__()
-        print("Gson constructor")
-
-    def gson_style(self):
-        print("GSon style - method")
+# class GSon(Son):
+#     gs_age = 10
+#
+#     def __init__(self):
+#         super().__init__()
+#         print("Gson constructor")
+#
+#     def gson_style(self):
+#         print("GSon style - method")
